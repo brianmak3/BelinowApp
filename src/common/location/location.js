@@ -1,0 +1,413 @@
+import countries from './countries'
+import afghanistan from './data/afghanistan'
+import albania from './data/albania'
+import algeria from './data/algeria'
+import andorra from './data/andorra'
+import angola from './data/angola'
+import antigua_and_barbuda from './data/antigua-and-barbuda'
+import argentina from './data/argentina'
+import armenia from './data/armenia'
+import australia from './data/australia'
+import austria from './data/austria'
+import azerbaijan from './data/azerbaijan'
+import bahamas from './data/bahamas'
+import bahrain from './data/bahrain'
+import bangladesh from './data/bangladesh'
+import barbados from './data/barbados'
+import belarus from './data/belarus'
+import belgium from './data/belgium'
+import belize from './data/belize'
+import benin from './data/benin'
+import bhutan from './data/bhutan'
+import bolivia from './data/bolivia'
+import bosnia_and_herzegovina from './data/bosnia-and-herzegovina'
+import botswana from './data/botswana'
+import brazil from './data/brazil'
+import brunei_darussalam from './data/brunei-darussalam'
+import bulgaria from './data/bulgaria'
+import burkina_faso from './data/burkina-faso'
+import burundi from './data/burundi'
+import cambodia from './data/cambodia'
+import cameroon from './data/cameroon'
+import canada from './data/canada'
+import cape_verde from './data/cape-verde'
+import central_african_republic from './data/central-african-republic'
+import chad from './data/chad'
+import chile from './data/chile'
+import china from './data/china'
+import colombia from './data/colombia'
+import comoros from './data/comoros'
+import congo_the_democratic_republic_of_the from './data/congo-the-democratic-republic-of-the'
+import congo from './data/congo'
+import costa_rica from './data/costa-rica'
+import cote_d_ivoire_republic_of from './data/cote-d-ivoire-republic-of'
+import croatia from './data/croatia'
+import cuba from './data/cuba'
+import cyprus from './data/cyprus'
+import czech_republic from './data/czech-republic'
+import denmark from './data/denmark'
+import djibouti from './data/djibouti'
+import dominica from './data/dominica'
+import ecuador from './data/ecuador'
+import egypt from './data/egypt'
+import el_salvador from './data/el-salvador'
+import equatorial_guinea from './data/equatorial-guinea'
+import eritrea from './data/eritrea'
+import estonia from './data/estonia'
+import ethiopia from './data/ethiopia'
+import fiji from './data/fiji'
+import finland from './data/finland'
+import france from './data/france'
+import gabon from './data/gabon'
+import gambia from './data/gambia'
+import georgia from './data/georgia'
+import germany from './data/germany'
+import ghana from './data/ghana'
+import greece from './data/greece'
+import greenland from './data/greenland'
+import grenada from './data/grenada'
+import guatemala from './data/guatemala'
+import guinea_bissau from './data/guinea-bissau'
+import guinea from './data/guinea'
+import guyana from './data/guyana'
+import haiti from './data/haiti'
+import honduras from './data/honduras'
+import hong_kong from './data/hong-kong'
+import hungary from './data/hungary'
+import iceland from './data/iceland'
+import india from './data/india'
+import indonesia from './data/indonesia'
+import iran_islamic_republic_of from './data/iran-islamic-republic-of'
+import iraq from './data/iraq'
+import ireland from './data/ireland'
+import israel from './data/israel'
+import italy from './data/italy'
+import jamaica from './data/jamaica'
+import japan from './data/japan'
+import jordan from './data/jordan'
+import kazakhstan from './data/kazakhstan'
+import kenya from './data/kenya'
+import kiribati from './data/kiribati'
+import korea_democratic_people_s_republic_of from './data/korea-democratic-people-s-republic-of'
+import korea_republic_of from './data/korea-republic-of'
+import kuwait from './data/kuwait'
+import kyrgyzstan from './data/kyrgyzstan'
+import lao_people_s_democratic_republic from './data/lao-people-s-democratic-republic'
+import latvia from './data/latvia'
+import lebanon from './data/lebanon'
+import lesotho from './data/lesotho'
+import liberia from './data/liberia'
+import libyan_arab_jamahiriya from './data/libyan-arab-jamahiriya'
+import liechtenstein from './data/liechtenstein'
+import lithuania from './data/lithuania'
+import luxembourg from './data/luxembourg'
+import macedonia_the_former_yugoslav_republic_of from './data/macedonia-the-former-yugoslav-republic-of'
+import madagascar from './data/madagascar'
+import malawi from './data/malawi'
+import malaysia from './data/malaysia'
+import maldives from './data/maldives'
+import mali from './data/mali'
+import malta from './data/malta'
+import marshall_islands from './data/marshall-islands'
+import mauritania from './data/mauritania'
+import mauritius from './data/mauritius'
+import mexico from './data/mexico'
+import micronesia_federated_states_of from './data/micronesia-federated-states-of'
+import moldova_republic_of from './data/moldova-republic-of'
+import monaco from './data/monaco'
+import mongolia from './data/mongolia'
+import montenegro from './data/montenegro'
+import morocco from './data/morocco'
+import mozambique from './data/mozambique'
+import myanmar from './data/myanmar'
+import namibia from './data/namibia'
+import nauru from './data/nauru'
+import nepal from './data/nepal'
+import netherlands from './data/netherlands'
+import new_zealand from './data/new-zealand'
+import nicaragua from './data/nicaragua'
+import niger from './data/niger'
+import nigeria from './data/nigeria'
+import norway from './data/norway'
+import oman from './data/oman'
+import pakistan from './data/pakistan'
+import palau from './data/palau'
+import palestinian_territory_occupied from './data/palestinian-territory-occupied'
+import panama from './data/panama'
+import papua_new_guinea from './data/papua-new-guinea'
+import paraguay from './data/paraguay'
+import peru from './data/peru'
+import philippines from './data/philippines'
+import poland from './data/poland'
+import portugal from './data/portugal'
+import qatar from './data/qatar'
+import romania from './data/romania'
+import russian_federation from './data/russian-federation'
+import rwanda from './data/rwanda'
+import saint_helena_ascension_and_tristan_da_cunha from './data/saint-helena-ascension-and-tristan-da-cunha'
+import saint_kitts_and_nevis from './data/saint-kitts-and-nevis'
+import saint_lucia from './data/saint-lucia'
+import saint_vincent_and_the_grenadines from './data/saint-vincent-and-the-grenadines'
+import samoa from './data/samoa'
+import san_marino from './data/san-marino'
+import sao_tome_and_principe from './data/sao-tome-and-principe'
+import saudi_arabia from './data/saudi-arabia'
+import senegal from './data/senegal'
+import serbia from './data/serbia'
+import seychelles from './data/seychelles'
+import sierra_leone from './data/sierra-leone'
+import singapore from './data/singapore'
+import slovakia from './data/slovakia'
+import slovenia from './data/slovenia'
+import solomon_islands from './data/solomon-islands'
+import somalia from './data/somalia'
+import south_africa from './data/south-africa'
+import south_sudan from './data/south-sudan'
+import spain from './data/spain'
+import sri_lanka from './data/sri-lanka'
+import sudan from './data/sudan'
+import suriname from './data/suriname'
+import swaziland from './data/swaziland'
+import sweden from './data/sweden'
+import switzerland from './data/switzerland'
+import syrian_arab_republic from './data/syrian-arab-republic'
+import taiwan_province_of_china from './data/taiwan-province-of-china'
+import tajikistan from './data/tajikistan'
+import tanzania_united_republic_of from './data/tanzania-united-republic-of'
+import thailand from './data/thailand'
+import timor_leste from './data/timor-leste'
+import togo from './data/togo'
+import tonga from './data/tonga'
+import trinidad_and_tobago from './data/trinidad-and-tobago'
+import tunisia from './data/tunisia'
+import turkey from './data/turkey'
+import turkmenistan from './data/turkmenistan'
+import tuvalu from './data/tuvalu'
+import uganda from './data/uganda'
+import ukraine from './data/ukraine'
+import united_arab_emirates from './data/united-arab-emirates'
+import united_kingdom from './data/united-kingdom'
+import united_states_minor_outlying_islands from './data/united-states-minor-outlying-islands'
+import united_states from './data/united-states'
+import uruguay from './data/uruguay'
+import uzbekistan from './data/uzbekistan'
+import vanuatu from './data/vanuatu'
+import venezuela from './data/venezuela'
+import viet_nam from './data/viet-nam'
+import yemen from './data/yemen'
+import zambia from './data/zambia'
+import zimbabwe from './data/zimbabwe'
+
+function getCountries() {
+    return countries;
+}
+
+function getCities(country) {
+    switch (country) {
+        case "afghanistan": return afghanistan;
+        case "albania": return albania;
+        case "algeria": return algeria;
+        case "andorra": return andorra;
+        case "angola": return angola;
+        case "antigua-and-barbuda": return antigua_and_barbuda;
+        case "argentina": return argentina;
+        case "armenia": return armenia;
+        case "australia": return australia;
+        case "austria": return austria;
+        case "azerbaijan": return azerbaijan;
+        case "bahamas": return bahamas;
+        case "bahrain": return bahrain;
+        case "bangladesh": return bangladesh;
+        case "barbados": return barbados;
+        case "belarus": return belarus;
+        case "belgium": return belgium;
+        case "belize": return belize;
+        case "benin": return benin;
+        case "bhutan": return bhutan;
+        case "bolivia": return bolivia;
+        case "bosnia-and-herzegovina": return bosnia_and_herzegovina;
+        case "botswana": return botswana;
+        case "brazil": return brazil;
+        case "brunei-darussalam": return brunei_darussalam;
+        case "bulgaria": return bulgaria;
+        case "burkina-faso": return burkina_faso;
+        case "burundi": return burundi;
+        case "cambodia": return cambodia;
+        case "cameroon": return cameroon;
+        case "canada": return canada;
+        case "cape-verde": return cape_verde;
+        case "central-african-republic": return central_african_republic;
+        case "chad": return chad;
+        case "chile": return chile;
+        case "china": return china;
+        case "colombia": return colombia;
+        case "comoros": return comoros;
+        case "congo-the-democratic-republic-of-the": return congo_the_democratic_republic_of_the;
+        case "congo": return congo;
+        case "costa-rica": return costa_rica;
+        case "cote-d-ivoire-republic-of": return cote_d_ivoire_republic_of;
+        case "croatia": return croatia;
+        case "cuba": return cuba;
+        case "cyprus": return cyprus;
+        case "czech-republic": return czech_republic;
+        case "denmark": return denmark;
+        case "djibouti": return djibouti;
+        case "dominica": return dominica;
+        //case "dominican-republic": return dominican_republic;
+        case "ecuador": return ecuador;
+        case "egypt": return egypt;
+        case "el-salvador": return el_salvador;
+        case "equatorial-guinea": return equatorial_guinea;
+        case "eritrea": return eritrea;
+        case "estonia": return estonia;
+        case "ethiopia": return ethiopia;
+        case "fiji": return fiji;
+        case "finland": return finland;
+        case "france": return france;
+        case "gabon": return gabon;
+        case "gambia": return gambia;
+        case "georgia": return georgia;
+        case "germany": return germany;
+        case "ghana": return ghana;
+        case "greece": return greece;
+        case "greenland": return greenland;
+        case "grenada": return grenada;
+        case "guatemala": return guatemala;
+        case "guinea-bissau": return guinea_bissau;
+        case "guinea": return guinea;
+        case "guyana": return guyana;
+        case "haiti": return haiti;
+        case "honduras": return honduras;
+        case "hong-kong": return hong_kong;
+        case "hungary": return hungary;
+        case "iceland": return iceland;
+        case "india": return india;
+        case "indonesia": return indonesia;
+        case "iran-islamic-republic-of": return iran_islamic_republic_of;
+        case "iraq": return iraq;
+        case "ireland": return ireland;
+        case "israel": return israel;
+        case "italy": return italy;
+        case "jamaica": return jamaica;
+        case "japan": return japan;
+        case "jordan": return jordan;
+        case "kazakhstan": return kazakhstan;
+        case "kenya": return kenya;
+        case "kiribati": return kiribati;
+        case "korea-democratic-people-s-republic-of": return korea_democratic_people_s_republic_of;
+        case "korea-republic-of": return korea_republic_of;
+        case "kuwait": return kuwait;
+        case "kyrgyzstan": return kyrgyzstan;
+        case "lao-people-s-democratic-republic": return lao_people_s_democratic_republic;
+        case "latvia": return latvia;
+        case "lebanon": return lebanon;
+        case "lesotho": return lesotho;
+        case "liberia": return liberia;
+        case "libyan-arab-jamahiriya": return libyan_arab_jamahiriya;
+        case "liechtenstein": return liechtenstein;
+        case "lithuania": return lithuania;
+        case "luxembourg": return luxembourg;
+        case "macedonia-the-former-yugoslav-republic-of": return macedonia_the_former_yugoslav_republic_of;
+        case "madagascar": return madagascar;
+        case "malawi": return malawi;
+        case "malaysia": return malaysia;
+        case "maldives": return maldives;
+        case "mali": return mali;
+        case "malta": return malta;
+        case "marshall-islands": return marshall_islands;
+        case "mauritania": return mauritania;
+        case "mauritius": return mauritius;
+        case "mexico": return mexico;
+        case "micronesia-federated-states-of": return micronesia_federated_states_of;
+        case "moldova-republic-of": return moldova_republic_of;
+        case "monaco": return monaco;
+        case "mongolia": return mongolia;
+        case "montenegro": return montenegro;
+        case "morocco": return morocco;
+        case "mozambique": return mozambique;
+        case "myanmar": return myanmar;
+        case "namibia": return namibia;
+        case "nauru": return nauru;
+        case "nepal": return nepal;
+        case "netherlands": return netherlands;
+        case "new-zealand": return new_zealand;
+        case "nicaragua": return nicaragua;
+        case "niger": return niger;
+        case "nigeria": return nigeria;
+        case "norway": return norway;
+        case "oman": return oman;
+        case "pakistan": return pakistan;
+        case "palau": return palau;
+        case "palestinian-territory-occupied": return palestinian_territory_occupied;
+        case "panama": return panama;
+        case "papua-new-guinea": return papua_new_guinea;
+        case "paraguay": return paraguay;
+        case "peru": return peru;
+        case "philippines": return philippines;
+        case "poland": return poland;
+        case "portugal": return portugal;
+        case "qatar": return qatar;
+        case "romania": return romania;
+        case "russian-federation": return russian_federation;
+        case "rwanda": return rwanda;
+        case "saint-helena-ascension-and-tristan-da-cunha": return saint_helena_ascension_and_tristan_da_cunha;
+        case "saint-kitts-and-nevis": return saint_kitts_and_nevis;
+        case "saint-lucia": return saint_lucia;
+        case "saint-vincent-and-the-grenadines": return saint_vincent_and_the_grenadines;
+        case "samoa": return samoa;
+        case "san-marino": return san_marino;
+        case "sao-tome-and-principe": return sao_tome_and_principe;
+        case "saudi-arabia": return saudi_arabia;
+        case "senegal": return senegal;
+        case "serbia": return serbia;
+        case "seychelles": return seychelles;
+        case "sierra-leone": return sierra_leone;
+        case "singapore": return singapore;
+        case "slovakia": return slovakia;
+        case "slovenia": return slovenia;
+        case "solomon-islands": return solomon_islands;
+        case "somalia": return somalia;
+        case "south-africa": return south_africa;
+        case "south-sudan": return south_sudan;
+        case "spain": return spain;
+        case "sri-lanka": return sri_lanka;
+        case "sudan": return sudan;
+        case "suriname": return suriname;
+        case "swaziland": return swaziland;
+        case "sweden": return sweden;
+        case "switzerland": return switzerland;
+        case "syrian-arab-republic": return syrian_arab_republic;
+        case "taiwan-province-of-china": return taiwan_province_of_china;
+        case "tajikistan": return tajikistan;
+        case "tanzania-united-republic-of": return tanzania_united_republic_of;
+        case "thailand": return thailand;
+        case "timor-leste": return timor_leste;
+        case "togo": return togo;
+        case "tonga": return tonga;
+        case "trinidad-and-tobago": return trinidad_and_tobago;
+        case "tunisia": return tunisia;
+        case "turkey": return turkey;
+        case "turkmenistan": return turkmenistan;
+        case "tuvalu": return tuvalu;
+        case "uganda": return uganda;
+        case "ukraine": return ukraine;
+        case "united-arab-emirates": return united_arab_emirates;
+        case "united-kingdom": return united_kingdom;
+        case "united-states-minor-outlying-islands": return united_states_minor_outlying_islands;
+        case "united-states": return united_states;
+        case "uruguay": return uruguay;
+        case "uzbekistan": return uzbekistan;
+        case "vanuatu": return vanuatu;
+        case "venezuela": return venezuela;
+        case "viet-nam": return viet_nam;
+        case "yemen": return yemen;
+        case "zambia": return zambia;
+        case "zimbabwe": return zimbabwe;
+    }
+    return [];
+}
+
+export default {
+    getCountries,
+    getCities
+}

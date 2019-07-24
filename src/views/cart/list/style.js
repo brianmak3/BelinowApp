@@ -1,0 +1,175 @@
+import { StyleSheet } from 'react-native'
+import {colors}  from '../../../common/colors';
+
+export default  StyleSheet.create({
+    main:{
+        backgroundColor:colors.background,
+        flex:1
+    },
+    btn:{
+      padding:10,
+      paddingTop:5,
+      paddingBottom:5,
+      backgroundColor:'#fff',
+      marginBottom:10,
+      marginTop:10
+  },
+  shopDiv:{
+      backgroundColor:'#fff',
+      marginTop:6
+    },
+  voucherText:{
+      color:'#CA4205', 
+      fontSize:12, 
+      fontStyle:'italic'
+    },
+    sellerName:{
+        marginRight:15,
+        marginLeft:10,
+        marginTop:2},
+  shop:{
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'space-between',
+        borderBottomWidth:0.5,
+        borderBottomColor:colors.background,
+        paddingBottom:10,
+        paddingTop:10,
+        marginLeft:5,
+        marginRight:5
+    },
+  ScrollView:{
+    padding:0,
+    margin:0,
+    backgroundColor:colors.background
+  },
+  flatDiv:{
+    backgroundColor:colors.background,
+    padding:5,
+    paddingLeft:15
+  },
+  just:{
+    fontSize:15
+  },
+  deleteBtn:{
+      alignSelf:'flex-end',
+      marginTop:-20,
+      marginRight:20
+  },
+  deleteText:{
+      color:'#fff', 
+      fontSize:16},
+  header:{
+      height:40,
+      backgroundColor:colors.main,
+      justifyContent:'center',
+      alignItems:'center',
+  },
+
+cartContainer: {
+    flex: 1,  
+    backgroundColor:colors.main
+},
+ScrollView:{
+    padding:0,
+    margin:0,
+    backgroundColor:colors.background
+    },
+ preferred:{
+     paddingBottom:10,
+     backgroundColor:'#fff'
+    },
+wrap:{flex:20,
+    flexDirection:'row',
+    padding:5,
+    justifyContent:'space-between'
+},
+flexWrap:{
+    flexDirection:'row',
+    flex:90,
+    flexWrap:'wrap'
+},
+Selection:{
+    padding:7,
+    backgroundColor:colors.background,
+    borderRadius:5, 
+    maxWidth:200
+  },
+SwipeView: {
+    flexDirection:'row',
+    paddingTop:5
+},
+radioView:{
+    height:70,
+    width:30,
+    justifyContent:'center',
+    alignItems:'center'
+},
+productImg: {
+    marginLeft:5,
+    width: 96,
+    height: 120
+},
+swipebtn:{
+    flex:1,
+    justifyContent:'center',
+    alignItems:'center'
+  },
+  infoBtn:{padding:5,
+    backgroundColor:'#fff',
+  },
+  description:{
+    fontSize:12
+},
+infoView:{
+    flexDirection:'row',
+    justifyContent:'space-between',
+    alignItems:'center'
+},
+newPrice:{
+    color:'grey', 
+    fontSize:12,
+    marginTop:5,
+    marginBottom:5
+},
+addRmDiv:{flexDirection:'row',
+    borderColor:colors.bottomColor,
+    borderWidth:0.5,
+    justifyContent:'center',
+    marginRight:15
+},
+oldPrice:{
+    fontSize:12,
+    color:'grey',
+    margin:5,
+    marginLeft:0,
+    fontSize:11
+},
+crossedText:{
+    textDecorationLine:'line-through'
+},
+newPrice:{
+    color:colors.main,
+    fontWeight:'bold',
+    marginTop:2,
+    fontSize:12
+ },
+ addRmBtn:{
+    padding:4,
+    paddingLeft:7,
+    paddingRight:7,
+    borderColor:colors.bottomColor,
+    borderWidth:0.5,
+  },
+  addRemBtn:{
+      color:'grey',
+      fontSize:12
+    },
+addRmBtn:{
+    padding:4,
+    paddingLeft:7,
+    paddingRight:7,
+    borderColor:colors.bottomColor,
+    borderWidth:0.5,
+    },
+});
