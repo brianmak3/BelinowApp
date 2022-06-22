@@ -11,7 +11,7 @@
     "adm-zip": "^0.4.13",
     "country-state-city": "^1.0.0",
     "fastfall": "^1.5.1",
-    "got": "^9.6.0",
+    "got": "^11.8.5",
     "https": "^1.0.0",
     "moment": "^2.24.0",
     "plist": "^3.0.1",
